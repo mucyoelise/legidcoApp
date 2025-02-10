@@ -1,0 +1,262 @@
+button, i {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 12px 0px 12px;
+}
+nav div.navbar-left {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+nav div.navbar-left i {
+  display: none;
+}
+nav div.navbar-middle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav div.navbar-middle li {
+  display: block;
+  margin: auto;
+  list-style: none;
+  padding: 2em;
+}
+nav div.navbar-middle li a {
+  color: #0b0101;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  text-decoration: none;
+}
+nav div.navbar-middle li a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+nav div.navbar-right {
+  display: flex;
+  padding: 18px 12px;
+}
+nav div.navbar-right button {
+  display: block;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 12px;
+  border: none;
+}
+nav div.navbar-right button:not(:nth-child(1)) {
+  border-radius: 45px;
+  padding: 12px 24px;
+  color: #fff;
+  background-color: black;
+}
+
+main {
+  margin-top: 12px;
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: row;
+}
+main section.main-left div {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+}
+main section.main-left div h1 {
+  font-size: 4em;
+}
+main section.main-left div p {
+  padding-right: 8em;
+  font-size: 22px;
+}
+main section.main-left div.main-buttons button {
+  margin: 4em 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+main section.main-left div.main-buttons button.free-trial {
+  background-color: black;
+  color: white;
+}
+main section.main-left div.main-buttons button.view-demo {
+  background-color: white;
+  color: black;
+}
+main section.main-left div.downLeftPart {
+  margin: 24px;
+  display: flex;
+}
+main section.main-left div.aiImageText {
+  margin: 15px;
+  line-height: 30px;
+}
+main section.main-left div.aiImageText h3 {
+  font-size: 27px;
+  font-weight: bold;
+}
+main section.main-left div.aiImageText p {
+  font-size: 17px;
+}
+main section.main-right {
+  background: linear-gradient(linen, rgba(225, 225, 135, 0.986));
+  box-shadow: 0px 3px 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+main section.main-right div {
+  display: block;
+  text-align: center;
+}
+main section.main-right div img {
+  border-radius: 24px;
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+main section.main-right div.main-bars {
+  display: flex;
+  justify-content: space-between;
+}
+main section.main-right div.progressive-bar, main section.main-right div.cost-saving-bar {
+  border-radius: 15px;
+  padding: 0px 10px;
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+}
+main section.main-right div.progressive-bar {
+  left: -15%;
+  color: #fff;
+  background-color: black;
+}
+main section.main-right div.cost-saving-bar {
+  line-height: 2em;
+  background-color: white;
+  right: 10%;
+}
+main section.main-right div.right-text {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  padding: 2em;
+}
+main section.main-right div.right-text li {
+  font-size: 1em;
+  list-style: square;
+}
+main section.main-right div.right-text li span {
+  color: rgb(59, 59, 239);
+}
+
+@media (min-width: 801px) and (max-width: 1009px) {
+  nav div.navbar-left {
+    display: flex;
+  }
+  nav div.navbar-left i {
+    padding: 0 10px;
+    font-style: normal;
+    display: block;
+    margin: auto;
+  }
+  nav div.navbar-middle {
+    display: none;
+  }
+  nav div.drop-list {
+    display: block;
+    position: absolute;
+    left: 3em;
+    top: 6em;
+    list-style: none;
+    background-color: black;
+    padding: 5px;
+  }
+  nav div.drop-list a {
+    color: white;
+    text-decoration: none;
+    padding: 3em;
+    line-height: 2em;
+  }
+  nav div.drop-list a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  main section.main-left div h1 {
+    font-size: 2em;
+  }
+  main section.main-left div p {
+    padding-right: 0px;
+    font-size: 20px;
+  }
+  main section.main-left div.downLeftPart {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.main-left div.downLeftPart .aiImageText h3 {
+    font-size: 23px;
+  }
+  main section.main-left div.downLeftPart .aiImageText p {
+    padding: 0;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav div.navbar-left {
+    display: flex;
+  }
+  nav div.navbar-left i {
+    padding: 0 10px;
+    font-style: normal;
+    display: block;
+    margin: auto;
+  }
+  nav div.navbar-middle {
+    display: none;
+  }
+  nav div.drop-list {
+    display: block;
+    position: absolute;
+    left: 3em;
+    top: 6em;
+    list-style: none;
+    background-color: black;
+    padding: 5px;
+  }
+  nav div.drop-list a {
+    color: white;
+    text-decoration: none;
+    padding: 3em;
+    line-height: 2em;
+  }
+  nav div.drop-list a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.main-left div h1 {
+    font-size: 2em;
+  }
+  main section.main-left div p {
+    padding-right: 0px;
+    font-size: 20px;
+  }
+  main section.main-left div.downLeftPart {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.main-left div.downLeftPart .aiImageText h3 {
+    font-size: 23px;
+  }
+  main section.main-left div.downLeftPart .aiImageText p {
+    padding: 0;
+    font-size: 20px;
+  }
+  main section.main-right div.progressive-bar {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
