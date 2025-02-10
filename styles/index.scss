@@ -1,0 +1,309 @@
+$font-custom: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+
+// Creating custom for all buttons' cursor to be pointer
+button, i {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:0px 12px 0px 12px;
+    div {
+        &.navbar-left {
+            font-family: $font-custom;
+            font-weight: bold;
+            font-size: 1.5em;
+            i {
+                display: none;
+            }
+        }
+        &.navbar-middle {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li {
+                display: block;
+                margin: auto;
+                list-style: none;
+                padding: 2em;
+                a {
+                    color: #0b0101;
+                    font-family: $font-custom;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    font-weight: 500;
+                    
+                }
+            }
+        }
+        &.navbar-right {
+            display: flex;
+            padding: 18px 12px;
+            button{
+                display: block;
+                margin: auto;
+                font-family: $font-custom;
+                font-weight: 400;
+                font-size: 18px;
+                background-color: #fff;
+                padding: 12px;
+                border: none;
+                &:not(:nth-child(1)){
+                    border-radius: 45px;
+                    padding: 12px 24px;
+                    color: #fff;
+                    background-color: black;
+                }
+            }
+        }
+
+    }
+}
+main {
+    margin-top: 12px;
+    padding: 12px 12px;
+    display: flex;
+    flex-direction: row;
+    section {
+        &.main-left {
+            div {
+                font-family: $font-custom;
+                h1 {
+                    font-size: 4em;
+                }
+                p {
+                    padding-right: 8em;
+                    font-size: 22px;
+                }
+                &.main-buttons {
+                    button {
+                        margin: 4em 20px;
+                        padding: 10px 30px;
+                        border-radius: 20px;
+                        &.free-trial {
+                            background-color: black;
+                            color: white;
+                        }
+                        &.view-demo {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+                &.downLeftPart {
+                    margin: 24px;
+                    display: flex;
+                }
+                &.aiImageText {
+                    margin: 15px;
+                    line-height: 30px;
+                    h3 {
+                        font-size: 27px;
+                        font-weight:bold;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        &.main-right {
+            background: linear-gradient(linen,rgba(225, 225, 135, 0.986));
+            box-shadow: 0px 3px 0.5px 1px rgba(0,0,0,0.5);
+            div {
+                display: block;
+                text-align: center;
+                img {
+                    border-radius: 24px;
+                    width: 350px;
+                    height: 400px;
+                    object-fit: cover;
+
+                }
+                &.main-bars {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &.progressive-bar, &.cost-saving-bar {
+                    border-radius: 15px;
+                    padding: 0px 10px;
+                    margin: 20px;
+                    position: relative;
+                    z-index: 1;
+                }
+                &.progressive-bar {
+                    left: -15%;
+                    color: #fff;
+                    background-color: black;
+                }
+                &.cost-saving-bar {
+                    line-height: 2em;
+                    background-color: white;
+                    right: 10%;
+                }
+                &.right-text {
+                    font-family: $font-custom;
+                    padding: 2em;
+                    li {
+                        font-size: 1em;
+                        list-style:square;
+                        span {
+                            color: rgb(59, 59, 239);
+                        }
+                    }
+                }
+            }
+                
+        }
+    }
+}
+
+@media (min-width:801px) and (max-width:1009px){
+    nav {
+        div {
+            &.navbar-left {
+                display: flex;
+                i {
+                    padding: 0 10px;
+                    font-style: normal;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            &.navbar-middle {
+                display: none;
+            }
+            &.drop-list {
+                display: block;
+                position: absolute;
+                left: 3em;
+                top: 6em;
+                list-style: none;
+                background-color: black;
+                padding: 5px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 3em;
+                    line-height: 2em;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+        }    
+    }
+    
+    main {
+        section {
+            &.main-left {
+                div {
+                    h1 {
+                        font-size: 2em;
+                    }
+                    p {
+                        padding-right: 0px;
+                        font-size: 20px;
+                    }
+                    &.downLeftPart {
+                        display: flex;
+                        flex-direction: column;
+                        .aiImageText {
+                            h3 {
+                                font-size: 23px;
+                            }
+                            p {
+                                padding: 0;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    nav {
+        div {
+            &.navbar-left {
+                display: flex;
+                i {
+                    padding: 0 10px;
+                    font-style: normal;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            &.navbar-middle {
+                display: none;
+            }
+            &.drop-list {
+                display: block;
+                position: absolute;
+                left: 3em;
+                top: 6em;
+                list-style: none;
+                background-color: black;
+                padding: 5px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 3em;
+                    line-height: 2em;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    font-weight: 500;
+                }
+            }
+        }    
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        section {
+            &.main-left {
+                div {
+                    h1 {
+                        font-size: 2em;
+                    }
+                    p {
+                        padding-right: 0px;
+                        font-size: 20px;
+                    }
+                    &.downLeftPart {
+                        display: flex;
+                        flex-direction: column;
+                        .aiImageText {
+                            h3 {
+                                font-size: 23px;
+                            }
+                            p {
+                                padding: 0;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            &.main-right {
+                div {
+                    &.progressive-bar {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
