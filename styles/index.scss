@@ -179,7 +179,10 @@ main {
                 display: none;
             }
             &.drop-list {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 80%;
                 position: absolute;
                 left: 3em;
                 top: 6em;
@@ -247,7 +250,10 @@ main {
                 display: none;
             }
             &.drop-list {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 80%;
                 position: absolute;
                 left: 3em;
                 top: 6em;
