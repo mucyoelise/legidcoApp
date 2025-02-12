@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Images/ai.jpeg">
     <link rel="stylesheet" href="styles/index.css">
     <title>Login|Create account</title>
 </head>
@@ -12,13 +13,15 @@
             <form action="">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
-                    <img src="appicons/bx-user-circle.svg" alt="user-icon">
+                    <input type="email" placeholder="Email" required>
+                    <img src="appicons/bx-envelope.svg" alt="user-icon">
                 </div>
+                <small class="email_error">Error message!</small>
                 <div class="input-box">
                     <input type="password" placeholder="Password" required>
                     <img src="appicons/bx-lock-alt.svg" alt="user-icon">
                 </div>
+                <small class="password_error">Error message!</small>
                 <div class="forgot-link">
                     <a href="#">Forgot password?</a>
                 </div>
