@@ -71,7 +71,7 @@ main section.form-box form div.input-box img {
   opacity: 0.3;
 }
 main section.form-box form div.forgot-link {
-  margin: -15px 0 15px;
+  margin-bottom: 15px;
 }
 main section.form-box form div.forgot-link a {
   font-size: 14.5px;
@@ -91,6 +91,10 @@ main section.form-box form div.social-icons a {
   color: #333;
   text-decoration: none;
   margin: 0 8px;
+}
+main section.form-box form small {
+  position: absolute;
+  visibility: hidden;
 }
 main section.form-box form input[type=submit] {
   width: 100%;
